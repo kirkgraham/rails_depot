@@ -22,11 +22,9 @@
 			<ul>
 				<li><%= @time %></li>
 			</ul>
-			<% if session[:counter] > 5 %>
 			<ul>
 				<li><%= pluralize session[:counter], 'time' %></li>
 			</ul>
-			<% end %>
 		</div>
 		<div id="main">
 			<%= yield %>
